@@ -1,0 +1,9 @@
+{
+  "name": "polymer-test-test",
+  "private": true,
+  "dependencies": {
+    "mocha": "~1.21.4",
+    "chai": "~1.9.1"
+  },
+  "devDependencies": {}
+}

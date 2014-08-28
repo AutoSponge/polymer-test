@@ -1,0 +1,28 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-button/paper-button.html">
+
+<polymer-element name="my-app">
+
+    <template>
+        <!-- start the app section -->
+        <div id="app" layout vertical>
+
+            <!-- the app's main content area -->
+            <div id="content" flex relative>
+                <paper-button label="button"></paper-button>
+            </div>
+
+        </div>
+    </template>
+
+    <script>
+
+        Polymer( 'my-app', {
+            ready: function () {
+                //...
+            }
+        } );
+
+    </script>
+
+</polymer-element>

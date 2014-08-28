@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mocha Spec Runner</title>
+    <link rel="stylesheet" href="components/mocha/mocha.css">
+</head>
+<body unresolved>
+<div id="mocha"></div>
+<script src="components/mocha/mocha.js"></script>
+<!--<script src="/testem.js"></script>-->
+<script>mocha.setup( 'bdd' )</script>
+<script src="components/chai/chai.js"></script>
+<script>
+    var assert = chai.assert;
+    var expect = chai.expect;
+    var should = chai.should();
+    mocha.globals(['jQuery', 'assert', 'expect', 'should']);
+</script>
+
+<!-- include polymer here -->
+<script src="../app/components/platform/platform.js"></script>
+<link rel="import" href="../app/components/polymer/polymer.html">
+
+<script>
+//the ultimate goal is to get back to when this worked
+(function ( global ) {
+    var names, filenames;
+
+    //for running all tests
+    names = [
+        'my-app'
+    ];
+
+    filenames = names.map( function ( name ) {
+        var script = document.createElement( 'script' );
+        script.src = 'spec/' + name + '.test.js';
+        script.async = false;
+        document.head.appendChild( script );
+        return '../app/components/' + name + '/' + name + '.html';
+    } );
+
+    // load test files
+    Polymer.import( filenames, function () {
+        mocha.run();
+    } );
+
+}( this ) );
+
+</script>
+</body>
+</html>

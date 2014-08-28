@@ -1,0 +1,22 @@
+{
+  "name": "polymer-test",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "jshint-stylish": "^0.4.0",
+    "testem": "^0.6.18"
+  },
+  "engines": {
+    "node": ">=0.10.29"
+  },
+  "scripts": {
+    "test": "testem ci -l Chrome",
+    "test-broken-1": "",
+    "test-broken-2": "",
+    "serve-test": "sh serve-test.sh",
+    "serve-test-broken-1": "sh serve-test-broken-1.sh",
+    "serve-test-broken-2": "sh serve-test-broken-2.sh",
+    "deps": "npm install && bower install && (cd ./test; bower install)",
+    "app": "sh serve.sh"
+  }
+}

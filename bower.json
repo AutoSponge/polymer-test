@@ -1,0 +1,13 @@
+{
+  "name": "target-profile-builder",
+  "version": "0.0.0",
+  "dependencies": {
+    "platform": "Polymer/platform#master",
+    "polymer": "Polymer/polymer#master",
+    "paper-button": "Polymer/paper-button#~0.3.5"
+  },
+  "devDependencies": {},
+  "resolutions": {
+    "polymer": "master"
+  }
+}

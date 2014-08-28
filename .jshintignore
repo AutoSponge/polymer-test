@@ -1,0 +1,3 @@
+app/public/components/platform/platform.js
+app/public/components/polymer/polymer.js
+app/public/components/lunr.js/**/*.js
