@@ -32,3 +32,7 @@ Try running any of the tests in browser:
 ## See the "app"
 
 1.  `npm run app` (loads the app and its single Polymer component, paper-button)
+
+## For science
+
+Tracking progress in https://github.com/Polymer/polymer/issues/733
