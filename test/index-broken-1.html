@@ -35,9 +35,11 @@
     window.addEventListener( 'HTMLImportsLoaded', function() {
         console.log( 'HTMLImportsLoaded' );
     } );
-    window.HTMLImports.whenReady( function () {
-        console.log( 'HTMLImports#ready' );
-    } );
+    if ( window.HTMLImports && window.HTMLImports.whenReady ) {
+        window.HTMLImports.whenReady( function () {
+            console.log( 'HTMLImports#ready' );
+        } );
+    }
     window.addEventListener('WebComponentsReady', function(e) {
         //this breaks because something in Platform prevents the tests from executing
         //adding the other files doens't seem to make a difference

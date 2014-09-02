@@ -4,10 +4,7 @@
   "dependencies": {
     "platform": "Polymer/platform#master",
     "polymer": "Polymer/polymer#master",
-    "paper-button": "Polymer/paper-button#~0.3.5"
+    "paper-button": "Polymer/paper-button#master"
   },
-  "devDependencies": {},
-  "resolutions": {
-    "polymer": "master"
-  }
+  "devDependencies": {}
 }

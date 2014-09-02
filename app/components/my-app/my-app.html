@@ -19,7 +19,8 @@
 
         Polymer( 'my-app', {
             ready: function () {
-                //...
+                //never fires in the harness
+                console.log( 'my-app ready' );
             }
         } );
 
